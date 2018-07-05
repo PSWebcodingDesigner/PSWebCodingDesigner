@@ -181,3 +181,13 @@ a.reference-link{
   border: 3px solid  rgba(83, 172, 255, 0.808);
   border-top: none;
 }
+
+
+.day_contents{
+  padding: 24px 32px;
+  margin: 16px 0;
+  border-radius: 16px;
+  background-color: rgba(254, 237, 214, 0.6);
+}
+
+
