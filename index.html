@@ -165,6 +165,83 @@
       </div>
 
       <div class="practice-container">
+        <div class="content-title">&lt;Check this out!&gt;</div>
+        <div class="underline"></div>
+        <div class="content-subtitle">&#9728; 1.span with indent</div>
+          <span id="r1"></span>
+          <span id="r2"></span>
+          <span id="r3"></span>
+          <div class="example-code">
+            @html
+            <br> &lt;span id="r1"&gt;&lt;/span&gt;
+            <br> &lt;span id="r2"&gt;&lt;/span&gt;
+            <br> &lt;span id="r3"&gt;&lt;/span&gt;
+            <br>
+            <br> @CSS
+            <br> #r1, #r3{
+            <br>  width: 30px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(62, 24, 199, 0.28);
+            <br> }
+            <br> #r2 {
+            <br>  width: 228px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(107, 115, 126, 0.3);
+            <br> }
+          </div>
+        <div class="underline"></div>
+        <div class="content-subtitle">&#9728; 2.span without indent</div>
+          <span id="r1"></span><span id="r2"></span><span id="r3"></span>
+          <div class="example-code">
+            @html
+            <br> &lt;span id="r1"&gt;&lt;/span&gt;&lt;span id="r2"&gt;&lt;/span&gt;&lt;span id="r3"&gt;&lt;/span&gt;
+            <br>
+            <br> @CSS : <span class="highlight-green">same with &#9728;1</span>
+            <br> #r1, #r3{
+            <br>  width: 30px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(62, 24, 199, 0.28);
+            <br> }
+            <br> #r2 {
+            <br>  width: 228px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(107, 115, 126, 0.3);
+            <br> }
+          </div>
+        <div class="underline"></div>
+        <div class="content-subtitle">&#9728; 3.span with indent and float properties</div>
+          <span id="r1f"></span>
+          <span id="r2f"></span>
+          <span id="r3f"></span>
+          <div class="example-code" id="flex-example">
+            @html
+            <br> &lt;span id="r1f"&gt;&lt;/span&gt;
+            <br> &lt;span id="r2f"&gt;&lt;/span&gt;
+            <br> &lt;span id="r3f"&gt;&lt;/span&gt;
+            <br>
+            <br> @CSS
+            <br> #r1f, #r3f{
+            <br>  width: 30px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(62, 24, 199, 0.28);
+            <br>  float: left;
+            <br> }
+            <br> #r2f {
+            <br>  width: 228px;
+            <br>  height: 30px;
+            <br>  display: inline-block;
+            <br>  background-color: rgba(107, 115, 126, 0.3);
+            <br>  float: left;
+            <br> }
+          </div>
+      </div>
+
+      <div class="practice-container">
         <div class="content-title">&lt;Let's practice!&gt;</div>
         <a class="example-img" href="./images/practice1.png">
           <img src="./images/practice1.png" alt="sample1">
