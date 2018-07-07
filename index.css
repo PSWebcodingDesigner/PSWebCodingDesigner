@@ -181,3 +181,33 @@ a.reference-link{
   border: 3px solid  rgba(83, 172, 255, 0.808);
   border-top: none;
 }
+
+#r1, #r3{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(62, 24, 199, 0.28);
+}
+#r2 {
+  width: 228px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(107, 115, 126, 0.3);
+}
+#r1f, #r3f{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(62, 24, 199, 0.28);
+  float: left;
+}
+#r2f {
+  width: 228px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(107, 115, 126, 0.3);
+  float: left;
+}
+#flex-example{
+  clear: left;
+}
