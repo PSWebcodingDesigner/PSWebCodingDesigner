@@ -1,4 +1,4 @@
-console.log("hello world");
+
 
 var 커피종류 = [
     "아메리카노",
