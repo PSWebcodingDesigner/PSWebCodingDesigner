@@ -1,0 +1,67 @@
+*{
+  font-family: Avenir,Monospaced Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  color: rgba(0,0,0,.85);
+}
+body{
+  background-color: #eff3f6;
+}
+button {
+  border: none;
+}
+.container{
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+}
+.coffeeTitle{
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  padding: 56px 0;
+}
+.coffee-contents{
+  display: flex;
+  width: 960px;
+  height: 400px;
+  box-shadow: 0 12px 20px #d8e0e6;
+}
+.story-container{
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  background-color: #2f54eb;
+}
+.btn-container{
+  display: flex;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center
+}
+.dummy p{
+  padding: 0 40px;
+  color: #fff;
+}
+#coffeeContent{
+  font-size: 32px;
+  color: #fff;
+  text-align: left;
+  padding: 40px 0 40px 40px;
+}
+#coffeeContent a{
+  color: #fff;
+}
+#coffeeBtn{
+  width: 100%;
+  font-weight: 100;
+  font-size: 300px;
+  text-align: center;
+  color: #ececec;
+  border: none;
+  outline:none;
+}
+#coffeeBtn:hover{
+  color: rgba(255, 192, 56, 0.856);
+}
