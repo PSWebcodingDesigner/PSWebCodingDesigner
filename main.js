@@ -27,4 +27,8 @@ for (var 순서 = 0; 순서 < 커피종류.length; 순서++){
 
 console.log("hello world");
 
+console.log("First Start");
+
+
 var 오오 = ["올","좋당"]
+
