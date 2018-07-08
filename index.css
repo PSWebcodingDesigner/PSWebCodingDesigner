@@ -93,6 +93,12 @@ a.reference-link{
   padding: 24px 32px;
   margin: 16px 0;
   border-radius: 16px;
+  background-color: rgb(237, 243, 249);
+}
+.check-container{
+  padding: 24px 32px;
+  margin: 16px 0;
+  border-radius: 16px;
   background-color: rgb(243, 243, 243);
 }
 .example-img{
@@ -115,6 +121,9 @@ a.reference-link{
 #float-right{
   display: inline-block;
 }
+
+
+
 /*shapes*/
 
 .margin-ex1{
