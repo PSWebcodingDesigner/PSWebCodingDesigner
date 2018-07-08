@@ -166,9 +166,9 @@
       </div>
 
       <div class="check-container">
-        <div class="content-title">&lt;Check this out!&gt;</div>
+        <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
         <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 1.span with indent</div>
+        <div class="content-subtitle">&#9728; 1.span with whitespace</div>
           <span id="r1"></span>
           <span id="r2"></span>
           <span id="r3"></span>
@@ -193,7 +193,7 @@
             <br> }
           </div>
         <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 2.span without indent</div>
+        <div class="content-subtitle">&#9728; 2.span without whitespace</div>
           <span id="r1"></span><span id="r2"></span><span id="r3"></span>
           <div class="example-code">
             @html
@@ -214,47 +214,115 @@
             <br> }
           </div>
         <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 3.span with indent and float properties</div>
-          <span id="r1f"></span>
-          <span id="r2f"></span>
-          <span id="r3f"></span>
-          <div class="example-code" id="flex-example">
-            @html
-            <br> &lt;span id="r1f"&gt;&lt;/span&gt;
-            <br> &lt;span id="r2f"&gt;&lt;/span&gt;
-            <br> &lt;span id="r3f"&gt;&lt;/span&gt;
-            <br>
-            <br> @CSS
-            <br> #r1f, #r3f{
-            <br>  width: 30px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(62, 24, 199, 0.28);
-            <br>  float: left;
-            <br> }
-            <br> #r2f {
-            <br>  width: 228px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(107, 115, 126, 0.3);
-            <br>  float: left;
-            <br> }
-          </div>
+        <div class="content-subtitle">&#9728; 3.span with whitespace and float properties</div>
+        <span id="r1f"></span>
+        <span id="r2f"></span>
+        <span id="r3f"></span>
+        <div class="example-code" id="flex-example">
+          @html
+          <br> &lt;span id="r1f"&gt;&lt;/span&gt;
+          <br> &lt;span id="r2f"&gt;&lt;/span&gt;
+          <br> &lt;span id="r3f"&gt;&lt;/span&gt;
+          <br>
+          <br> @CSS
+          <br> #r1f, #r3f{
+          <br>  width: 30px;
+          <br>  height: 30px;
+          <br>  display: inline-block;
+          <br>  background-color: rgba(62, 24, 199, 0.28);
+          <br>  float: left;
+          <br> }
+          <br> #r2f {
+          <br>  width: 228px;
+          <br>  height: 30px;
+          <br>  display: inline-block;
+          <br>  background-color: rgba(107, 115, 126, 0.3);
+          <br>  float: left;
+          <br> }
+        </div>
       </div>
 
       <div class="practice-container">
         <div class="content-title">&lt;Let's practice!&gt;</div>
         <div class="underline"></div>
         <div class="sub-contents-container">
-          <a class="example-img" href="./images/practice2.png">
-            <img src="./images/practice2.png" alt="sample1">
-          </a>
-          <div class="sub-contents">
-            <div class="content-subtitle">&#9728; Use 프로그래밍을 할 때 가장 많이 쓰게 되는 변수는 **변할 수 있는 값**을 뜻합니다.
+          <div class="sub-contents-left">
+            <a class="example-img" href="./images/practice2.png">
+              <img src="./images/practice2.png" alt="sample1">
+            </a>
+            <p class="comment">가로 중앙 정렬하기-2 예시</p>
+          </div>
+          <div class="sub-contents-right">
+            <div class="content-subtitle">
+              &#9728; 가로 중앙 정렬하기-1
+            </div>
+            <div class="description">
+              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 가로 사이즈가 고정일 경우 (예: 200px일 경우)
+            </div>
+            <div class="example-code">
+              @CSS
+              <br> position: absolute;  /* position: fixed; */ 
+              <br> left: 50%; 
+              <br> margin-left: -100px;
+            </div>
+            <div class="content-subtitle">
+              &#9728; 가로 중앙 정렬하기-2
+            </div>
+            <div class="description">
+              display 값이 <span class="highlight-green">block</span>이라면 margin을 활용합니다.
+            </div>
+            <div class="example-code">
+              @CSS
+              <br> margin: 0 auto;
+            </div>
+            <div class="content-subtitle">
+              &#9728; 가로 중앙 정렬하기-3
+            </div>
+            <div class="description">
+              display 값이 <span class="highlight-green">inline</span>이라면 text-align을 활용합니다.
+            </div>
+            <div class="example-code">
+              @CSS
+              <br> text-align: center;
             </div>
           </div>
-          <div class="underline"></div>
         </div>
+        <div class="underline"></div>
+
+        <div class="sub-contents-container">
+          <div class="sub-contents-left">
+            <a class="example-img" href="./images/practice2.png">
+              <img src="./images/practice3.png" alt="sample2">
+            </a>
+            <p class="comment">세로 중앙 정렬하기-1 예시</p>
+          </div>
+          <div class="sub-contents-right">
+            <div class="content-subtitle">
+              &#9728; 세로 중앙 정렬하기-1
+            </div>
+            <div class="description">
+              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 세로 사이즈가 고정일 경우 (예: 200px일 경우)
+            </div>
+            <div class="example-code">
+              @CSS
+              <br> position: absolute;  /* position: fixed; */ 
+              <br> top: 50%; 
+              <br> margin-top: -100px;
+            </div>
+            <div class="content-subtitle">
+              &#9728; 세로 중앙 정렬하기-2
+            </div>
+            <div class="description">
+              flex를 활용한 경우
+            </div>
+            <div class="example-code">
+              @CSS
+              <br> display: flex;
+              <br> align-items: center;
+            </div>
+          </div>
+        </div>
+        <div class="underline"></div>
       </div>
 
       <!--Day 3-->
@@ -262,7 +330,7 @@
         Day3.Basic javascript
       </div>
       <div class="contents">
-        <div class="content-title">변수</div>
+        <div class="content-title">&lt;변수&gt;</div>
         <div class="underline"></div>
         <div class="content-subtitle">&#9728; Use 프로그래밍을 할 때 가장 많이 쓰게 되는 변수는 **변할 수 있는 값**을 뜻합니다.
         </div>
@@ -277,8 +345,167 @@
         </div>
       </div>
 
+      <div class="contents">
+        <div class="content-title">&lt;if statement(조건문) Summary&gt;</div>
+        <div class="description">특정 코드를 수행할 때 조건이 성립될 때만 실행되도록 합니다. 아래의 형태가 기본 문법입니다.</div>
+        <div class="underline"></div>
+        <div class="description">
+            if (조건) {  
+          <br>  // 수행할 코드 
+          <br>  }
+        </div>
+        <div class="content-subtitle">&#9728; 조건이 true여야만 실행됩니다.
+        </div>
+        <div class="underline"></div>
+        <div class="description">
+            if (ture) {  
+          <br>  console.log("실행됨"); 
+          <br>  }
+        </div>
+        <div class="underline"></div>
+        <div class="description">
+            if (false) {  
+          <br>  console.log("실행안됨"); 
+          <br>  }
+        </div>
+      </div>
+
+      <div class="contents">
+        <div class="content-title">&lt;조건을 따지는 방법&gt;</div>
+        <a class="reference-link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Comparison_Operators">#Comparison_Operators</a>
+        <div class="underline"></div>
+        <div class="content-subtitle">&#9728;<span class="highlight-green">A === B</span>   A와 B가 같을 때 true 
+        </div>
+        <div class="description">
+          A == B 로 쓸 수도 있지만, javascript에서는 쓰지 않는게 좋습니다. 
+          <br>예를 들어 "1" == 1 로 쓰면 true로 인식합니다. (버그를 만드는 계기가 됩니다)
+        </div>
+        <div class="content-subtitle">&#9728;<span class="highlight-blue">A !== B</span>   A와 B가 다를 때 true 
+        </div>
+        <div class="description">위와 같은 이유로 A != B 로 쓰지 않습니다.</div>
+        <div class="content-subtitle">&#9728;<span class="highlight-pink">A > B</span>   A가 B보다 클 때 true 
+        </div>
+        <div class="content-subtitle">&#9728;<span class="highlight-pink">A < B</span>   A가 B보다 클 때 true 
+        </div>
+        <div class="content-subtitle">&#9728;<span class="highlight-green">A >= B</span>   A가 B와 같거나, B보다 클때 true 
+        </div>
+        <div class="content-subtitle">&#9728;<span class="highlight-green">A >= B</span>   A가 B와 같거나, B보다 작을때 true 
+        </div>
+        <div class="underline"></div>
+        <div class="example-code">
+            var 한국득점 = 2; 
+          <br>  var 독일득점 = 0;  
+          <br>  
+          <br>  if (한국득점 > 독일득점) {
+          <br>      console.log("한국 승리"); 
+          <br>  }
+          
+        </div>
+
+        <div class="content-subtitle"><br>&#9728;조건을 따지고 나머지 예외를 처리하는 방법</div>
+        <div class="underline"></div>
+        <div class="example-code">
+              var 한국득점 = 2; 
+          <br>  var 독일득점 = 0;  
+          <br>  
+          <br>  if (한국득점 > 독일득점) {
+          <br>      console.log("한국 승리"); 
+          <br>  } else {     
+          <br>  console.log("한국 패배"); 
+          <br>  }
+        </div>
+        
+        <div class="content-subtitle">&#9728;여러 조건을 따지는 방법</div>
+        <div class="underline"></div>
+        <div class="example-code">
+            var 한국득점 = 2; 
+          <br>  var 독일득점 = 0;  
+          <br>  
+          <br>  if (한국득점 > 독일득점) {
+          <br>      console.log("한국 승리"); 
+          <br>    } else if (한국득점 === 독일득점) { 
+          <br>      console.log("무승부"); } 
+          <br>  else {  
+          <br>      console.log("한국 패배"); 
+          <br>  }
+        </div>
+        
+        <div class="content-subtitle">&#9728;동시에 여러 조건을 만족해야 할 때 : &&  </div>
+        <div class="description">동시에 여러 조건을 만족해야 할때 조건식 두 개 사이에 <span class="highlight-green">&&</span> 를 사용합니다.</div>
+        <div class="underline"></div>
+        <div class="example-code">
+            var 한국독일승리국 = "한국"; 
+          <br>  var 스웨덴멕시코승리국 = "스웨덴";  
+          <br>  
+          <br>  if (한국독일승리국 === "한국" && 스웨덴멕시코승리국 === "멕시코") {     
+          <br>  console.log("한국 16강 진출"); 
+          <br>  } else {     
+          <br>  console.log("한국 16강 실패"); 
+          <br>  }
+        </div>
+
+        <div class="content-subtitle">&#9728;여러 조건 중 하나만 만족하면 될 때 : || </div>
+        <div class="description">여러 조건 중 하나만 만족하면 될 때 조건식 두 개 사이에 <span class="highlight-green">||</span> 를 사용합니다.</div>
+        <div class="underline"></div>
+        <div class="example-code">
+            var 시험점수 = 90; 
+          <br>  var 특기자 = false;  
+          <br>
+          <br>  if (시험점수 > 80 || 특기자 === true) {  
+          <br>  console.log("합격"); 
+          <br>  } else {  
+          <br>  console.log("불합격"); 
+          <br>  }
+        </div>
+      </div>
+      
+      <div class="contents">
+        <div class="content-title">&lt;for loop(반복문) Summary&gt;</div>
+        <div class="description">특정 코드를 반복할 때 사용합니다.아래 형태가 for loop의 기본 문법입니다</div>
+        <div class="underline"></div>
+        <div class="example-code">
+            for (var 순서 = 0; 순서 < 10; 순서++) {
+          <br>    console.log(순서)        
+          <br>    }
+        </div>
+        <div class="underline"></div>
+        <div class="comment">
+        // 10보다 작으면 으로 설정했기 때문에 0, 1, 2, 3, 4, 5, 6, 7, 8, 9까지 반복한 후 실행이 끝납니다. 순서라는 변수는 for loop 블록 안에서만 사용할 수 있습니다.<br><br>
+        </div>
+        <div class="description">
+          <ul>
+            <li>순서라는 변수에 0을 집어넣고</li>
+            <li>순서의 값이 10보다 작으면</li>
+            <li>순서에 1씩 더합니다. (++는 변수에 1씩 더하겠다는 의미입니다. 순서 = 순서 + 1과 같습니다.)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contents">
+        <div class="content-title">for loop in Array</div>
+        <div class="description">array는 반복할 때 유용하게 쓸 수 있습니다. <span class="highlight-pink">정말 정말 많이 사용하게 됩니다.</span> </div>
+        <div class="underline"></div>
+        <div class="example-code">
+            var 뭐먹을까리스트 = ["짬뽕", "파스타", "한식", "고기"];  
+          <br>
+          <br>  for (var 순서 = 0; 순서 < 뭐먹을까리스트.length; 순서++) {  
+          <br>  console.log(뭐먹을까리스트[순서] + "먹을까...?"); 
+          <br>  }
+        </div>
+        <div class="underline"></div>
+        <div class="comment">
+            Array는 꺼내쓸 때 뒤에 [0]식으로 번호를 붙여 줬던거 기억하시죠? :)<br><br>
+        </div>
+        <div class="description">
+          <ul>
+            <li>for loop의 순서 변수를 1씩 증가 시키면서 array의 값을 순회하는 것입니다.</li>
+            <li>뭐먹을까리스트.length는 해당 array에 담긴 값의 개수를 반환 해줍니다.</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="check-container">
-        <div class="content-title">&lt;Check this out!&gt; <p class="writer">by.Youngjin</p></div>
+        <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
         <div class="underline"></div>
         <div class="description">
           저는 수업중에 딴짓하는걸 좋아하는데요, 버튼 toggle 하는거랑 for문으로 array안의 element를 모두 보여주는걸 보고서 버튼을 클릭할 때마다 array 안의 element들을 차례로 불러오는걸 만들어보고싶어졌어요.
@@ -290,7 +517,7 @@
           <br>  2. onClick되면 showCoffeeStory함수를 호출하도록 한다
           <br>  3. 함수가 불리면 1~n의 숫자가 나와서 Array[Index]로 배열 안에 있는 element에 접근해서 그때마다 coffeeContent의 innerHtml을 바꿔준다
         </div>
-        <a class="reference-link" href="PSWebCodingDesigner/#3/coffee.html">#Javascript practice</a>
+        <a class="reference-link" href="coffee.html">#Javascript practice</a>
       </div>
     </div>
   </div>
