@@ -1,3 +1,16 @@
+
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {padding: 0; 
+  border: 0; 
+  margin: 0;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+
+
 /*overall*/
 
 a{text-decoration: none !important;}
@@ -8,6 +21,8 @@ a{text-decoration: none !important;}
   margin: 0px;
   color: rgb(109, 109, 109);
 }
+
+
 ul{
   padding-left: 16px;
 }
@@ -38,6 +53,14 @@ ul{
   color: rgb(84, 185, 118);
   margin-top: 80px;
 }
+
+.summary{
+  font-size: 14px;
+  font-weight: thin;
+  color: #9176FF;
+  padding : 10px;
+}
+
 .sub-title{
   font-size: 24px;
   font-style: italic;
@@ -57,6 +80,7 @@ ul{
   background-color: #4d8bfd;
   margin: 0px auto;
 }
+
 a.reference-link{
   font-weight: 500;
   line-height: 1.5em;
@@ -64,11 +88,44 @@ a.reference-link{
   margin: 40 auto;
   display: block;
 }
+
+
+
+
+.index_container{
+   display: inline-block;
+   idth: 1060px;
+   margin : 0 auto;
+   margin-top : 30px;
+   margin-bottom : 50px;
+}
+
+.index_inner{
+  display: inline-block;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+
 .index{
+  float: left;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.index_title{
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
-  margin: 24px 0;
 }
+
+.index:after{
+  clear: both;
+  content : "";
+  display: block;
+}
+
+
 .contents{
   padding: 24px 32px;
   margin: 16px 0;
