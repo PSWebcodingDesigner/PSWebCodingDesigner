@@ -115,9 +115,26 @@ a.reference-link{
 
 .index_title{
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: regular;
+  font-family: IBMPlexMono;
+  font-size: 20px;
+  color: #929292;
+  letter-spacing: -0.73px;
+  line-height: 34px;
 }
+
+.index_title_selected{
+  text-align: center;
+  font-weight: regular;
+  font-family: IBMPlexMono;
+  font-size: 20px;
+  color:black;
+  letter-spacing: -0.73px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #FFCBCB;
+}
+
 
 .index:after{
   clear: both;
