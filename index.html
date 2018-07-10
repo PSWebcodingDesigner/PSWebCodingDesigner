@@ -7,24 +7,109 @@
   <title>PS_WebCodingDesigner</title>
   <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
   />
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
   <script src="main.js"></script>
 </head>
 
 <body>
   <div class="body-container">
     <div class="header">
-      <div class="title">Welcome to Practical Studies</div>
+      <a href= "./index.html">
+           <div class="title">Welcome to Practical Studies</div>
+      </a>
       <div class="sub-title">Web Coding for Designers</div>
+
       <a class="btn-basic" href="https://buzzer.anzi.kr/">Buzzer Here</a>
     </div>
-    <div class="contents-container">
+
+
+   <div class="contents-container">
+
+
       <!--Day 1-->
-      <div class="index">
-        Day1.html/CSS Basic
-      </div>
-      <a class="reference-link" href="https://htmlreference.io/">#HTML Reference</a>
+
+    <div class="index_container"> 
+      <ul class="index_inner">
+
+         <li class="index">
+           <a href ="./index.html"> 
+                  <div class="index_title">
+                     Day1 
+                  </div>
+            </a>  
+        </li>
+
+         
+        <li class="index">
+            <a href ="./files/day2.html"> 
+                   <div class="index_title">
+                      Day2 
+                   </div>
+             </a> 
+         </li>
+
+
+         <li class="index">
+            <a href ="./files/day3.html"> 
+                   <div class="index_title">
+                      Day3
+                   </div>
+             </a>  
+         </li>
+
+         <li class="index">
+            <a href ="#"> 
+                   <div class="index_title">
+                      Day4
+                   </div>
+             </a>  
+         </li>
+
+
+         <li class="index">
+            <a href ="#"> 
+                   <div class="index_title">
+                      Day5
+                   </div>
+             </a>  
+         </li>
+
+         <li class="index">
+            <a href ="#"> 
+                   <div class="index_title">
+                      Day6
+                   </div>
+             </a>  
+         </li>
+
+
+         <li class="index">
+            <a href ="#"> 
+                   <div class="index_title">
+                      Day7
+                   </div>
+             </a>  
+         </li>
+
+         <li class="index">
+            <a href ="#"> 
+                   <div class="index_title">
+                      Day8
+                   </div>
+             </a>  
+         </li>
+
+        </ul>
+    </div>
+
+
+      <div class="summary">
+        Day1. 오리엔테이션 + html/CSS <br><br>
+        <a class="reference-link" href="https://htmlreference.io/">#HTML Reference</a>
       <a class="reference-link" href="https://cssreference.io/">#CSS Reference</a>
+
+      </div>
+
       <div class="contents">
         <div class="content-title">&lt;Selecting specific tag&gt;</div>
         <div class="underline"></div>
@@ -105,485 +190,7 @@
         </div>
         <div class="underline"></div>
       </div>
-      <!--Day 2-->
-      <div class="index">
-        Day2.Basic CSS Outline2
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;How to remove unnecessary margin?&gt;</div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; Use
-          <span class="highlight-green">
-            <a href="https://necolas.github.io/normalize.css/">normalize.css</a>
-          </span>
-        </div>
-        <div class="description">- Inside the head tag in html, put code below before main.css.</div>
-        <div class="example-code">
-          &lt;link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/&gt;
-        </div>
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;Easy way to set margin value&gt;</div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 1.Comebine (top/bottom) and (left/right)</div>
-        <div class="description">- The first value indicates top/bottom margin and second points left/right margin.</div>
-        <div class="content-subtitle">&#9728; 2.Define (top, right, bottom, left) value in single property.</div>
-        <div class="description">- Four value indecates top, right, bottom, left value each in a clockwise.</div>
-        <div class="margin-ex1">
-          <span class="margin-top-ex">
-            <span class="rec1"></span>
-            <span class="rec2">a'</span>
-            <span class="rec3"></span>
-          </span>
-          <span class="margin-middle">
-            <span class="rec4">d'</span>
-            <span class="rec5"></span>
-            <span class="rec6">b'</span>
-          </span>
-          <span class="margin-bottom">
-            <span class="rec7"></span>
-            <span class="rec8">c'</span>
-            <span class="rec9"></span>
-          </span>
-        </div>
-
-        <div class="example-code" id="margin-ex1">
-          1.property: top/bottom, left/right;
-          <br> margin:
-          <span class="highlight-pink">20px</span>
-          <span class="highlight-blue">30px</span>;
-          <br> padding:
-          <span class="highlight-pink">20px</span>
-          <span class="highlight-blue">30px</span>;
-          <br>
-          <br> 2.property:
-          <span class="highlight-green">a' b' c' d'</span>;
-          <br> margin: 20px 15px 20px 15px;
-          <br> padding: 20px 15px 20px 15px;
-        </div>
-      </div>
-
-      <div class="check-container">
-        <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
-        <div class="description">
-          구글링해보니 문서상 span 사이에 공백(whitespace)이 있을 경우 margin도, padding도 아닌 여백이 생긴다는 내용을 찾아볼 수 있었습니다.
-          <br>실제 웹 개발에서는 span의 display나 position 등 다양한 속성 뿐만아니라 그 부모 엘리먼트의 속성에 따라서도 결과물이 달라질 수 있기에 이게 정답이라고 단언할 수는 없지만 저는 위 예시 그림을 만들며 발생한 문제를 이렇게 <span class="highlight-blue"> //span태그를 공백없이 붙여 쓰거나, float:left;를 사용하여//</span> 해결했다는 경험을 공유하기 위해 만들었습니당.
-          <br>
-        </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 1.span with whitespace</div>
-          <span id="r1"></span>
-          <span id="r2"></span>
-          <span id="r3"></span>
-          <div class="example-code">
-            @html
-            <br> &lt;span id="r1"&gt;&lt;/span&gt;
-            <br> &lt;span id="r2"&gt;&lt;/span&gt;
-            <br> &lt;span id="r3"&gt;&lt;/span&gt;
-            <br>
-            <br> @CSS
-            <br> #r1, #r3{
-            <br>  width: 30px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(62, 24, 199, 0.28);
-            <br> }
-            <br> #r2 {
-            <br>  width: 228px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(107, 115, 126, 0.3);
-            <br> }
-          </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 2.span without whitespace</div>
-          <span id="r1"></span><span id="r2"></span><span id="r3"></span>
-          <div class="example-code">
-            @html
-            <br> &lt;span id="r1"&gt;&lt;/span&gt;&lt;span id="r2"&gt;&lt;/span&gt;&lt;span id="r3"&gt;&lt;/span&gt;
-            <br>
-            <br> @CSS : <span class="highlight-green">same with &#9728;1</span>
-            <br> #r1, #r3{
-            <br>  width: 30px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(62, 24, 199, 0.28);
-            <br> }
-            <br> #r2 {
-            <br>  width: 228px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(107, 115, 126, 0.3);
-            <br> }
-          </div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; 3.span with whitespace and float properties</div>
-        <span id="r1f"></span>
-        <span id="r2f"></span>
-        <span id="r3f"></span>
-        <div class="example-code" id="flex-example">
-          @html
-          <br> &lt;span id="r1f"&gt;&lt;/span&gt;
-          <br> &lt;span id="r2f"&gt;&lt;/span&gt;
-          <br> &lt;span id="r3f"&gt;&lt;/span&gt;
-          <br>
-          <br> @CSS
-          <br> #r1f, #r3f{
-          <br>  width: 30px;
-          <br>  height: 30px;
-          <br>  display: inline-block;
-          <br>  background-color: rgba(62, 24, 199, 0.28);
-          <br>  float: left;
-          <br> }
-          <br> #r2f {
-          <br>  width: 228px;
-          <br>  height: 30px;
-          <br>  display: inline-block;
-          <br>  background-color: rgba(107, 115, 126, 0.3);
-          <br>  float: left;
-          <br> }
-        </div>
-      </div>
-
-      <div class="practice-container">
-        <div class="content-title">&lt;Let's practice!&gt;</div>
-        <div class="underline"></div>
-        <!-- sub contents 시작 -->
-        <div class="sub-contents-container">
-          <div class="sub-contents-left">
-            <a class="example-img" href="./images/practice2.png">
-              <img src="./images/practice2.png" alt="sample1">
-            </a>
-            <a class="comment" href="">#가로 중앙 정렬하기-2 예시</a>
-          </div>
-          <div class="sub-contents-right">
-            <div class="content-subtitle">
-              &#9728; 가로 중앙 정렬하기-1
-            </div>
-            <div class="description">
-              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 가로 사이즈가 고정일 경우 (예: 200px일 경우)
-            </div>
-            <div class="example-code">
-              @CSS
-              <br> position: absolute;  /* position: fixed; */ 
-              <br> left: 50%; 
-              <br> margin-left: -100px;
-            </div>
-            <div class="content-subtitle">
-              &#9728; 가로 중앙 정렬하기-2
-            </div>
-            <div class="description">
-              display 값이 <span class="highlight-green">block</span>이라면 margin을 활용합니다.
-            </div>
-            <div class="example-code">
-              @CSS
-              <br> margin: 0 auto;
-            </div>
-            <div class="content-subtitle">
-              &#9728; 가로 중앙 정렬하기-3
-            </div>
-            <div class="description">
-              display 값이 <span class="highlight-green">inline</span>이라면 text-align을 활용합니다.
-            </div>
-            <div class="example-code">
-              @CSS
-              <br> text-align: center;
-            </div>
-          </div>
-        </div>
-        <div class="underline"></div>
-
-        <div class="sub-contents-container">
-          <div class="sub-contents-left">
-            <a class="example-img" href="./images/practice4.png">
-              <img src="./images/practice4.png" alt="sample2">
-            </a>
-            <a class="comment" href="">#세로 중앙 정렬하기-1 예시</a>
-            <a class="comment" href=""><br>#세로 중앙 정렬하기-2 예시</a>
-          </div>
-          <div class="sub-contents-right">
-            <div class="content-subtitle">
-              &#9728; 세로 중앙 정렬하기-1
-            </div>
-            <div class="description">
-              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 세로 사이즈가 고정일 경우 (예: 200px일 경우)
-            </div>
-            <div class="example-code">
-              @CSS
-              <br> position: absolute;  /* position: fixed; */ 
-              <br> top: 50%; 
-              <br> margin-top: -100px;
-            </div>
-            <div class="content-subtitle">
-              &#9728; 세로 중앙 정렬하기-2
-            </div>
-            <div class="description">
-              flex를 활용한 경우
-            </div>
-            <div class="example-code">
-              @CSS
-              <br> display: flex;
-              <br> align-items: center;
-            </div>
-          </div>
-        </div>
-
-        <div class="underline"></div>
-        <div class="sub-contents-container">
-            <div class="sub-contents-left">
-
-              <a href="./images/pratice05_popup.png" class="example-img">
-                <img src="./images/pratice05_popup.png" alt="sample03">
-              </a>
-              <p>#z-index 예시</p>
-            </div>
-            <!-- sub contents-left 끝 -->
-            <div class="sub-contents-right">
-                <div class="content-subtitle">
-                    &#9728; z-index
-                </div>
-                <div class="description">
-                    The z-index CSS property specifies the z-order of a positioned element and its descendants. <br>When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally covers an element with a lower one.
-                    <br>
-                    <br>z-index는 z축의 order을 나타낸다.
-                    <br>요소들이 overlap될 때, z-order는 다른 무언가를 덮는 어떤 것을 결정한다.
-                    <br>z-index가 큰 요소는 일반적으로 그것보다 z-index가 낮은 요소보다 상위에 위치한다.
-                </div>
-
-                <div class="example-code">
-                    <br>auto 입력 값
-                    <br>z-index: auto;
-                    <br>
-                    <br>
-                    <h5>뜻</h5>
-                    The stack level of the generated box in the current stacking context is the same as its parent's box.
-                    <br>
-                    <br>정수로 된 수치(integer)
-                    <br>z-index: 0;
-                    <br>z-index: 3;
-                    <br>z-index: 289;
-                    <br>z-index: -1; /* Negative values to lower the priority */
-                    <br>
-                    <br>
-                    <h5>뜻</h5>
-                    This integer is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context in which its stack level is 0. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.
-                    <br> 정수로 된 수치는 해당 영역에서 stack level을 0부터 만들 수 있다. 이 영역 밖에서 z-index를 가진 요소는 해당 영역 안에서 하위 z-index를 가진 요소에게 영향을 끼치지 않는다.
-                    <br>
-                    <br>Global 입력 값
-                    <br>z-index: inherit; 부모의 z-index를 이어 받는다.
-                    <br>z-index: initial; 이 요소의 z-index를 가장 하위의 요소로 둔다.
-                    <br>z-index: unset; 부모로부터 상속된게 있으면, inherit 적용/ 아니면 initial 적용
-                  </div>
-            </div>
-        </div>
-              <!-- Day2 Div 끝 -->
-      </div>
-
-      <!--Day 3-->
-      <div class="index">
-        Day3.Basic javascript
-      </div>
-      <div class="contents">
-        <div class="content-title">&lt;변수&gt; <p class="writer">by.seonyu</p></div>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728; Use 프로그래밍을 할 때 가장 많이 쓰게 되는 변수는 **변할 수 있는 값**을 뜻합니다.
-        </div>
-        <div class="description">
-          변수를 선언하는 행위를 컴퓨터에게 단어 공부를 시킨다고 생각합시다.
-          <br>
-          <br> var 숫자 = 123;
-          <br>var 인사말 = "안녕하세요";
-          <br> var 실화냐 = true;
-          <br> var 자식들 = ["철수", "영희", "지홍"];
-          <br> var 나 = {이름: "안지용", 신장: 186};
-        </div>
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;if statement(조건문) Summary&gt;</div>
-        <div class="description">특정 코드를 수행할 때 조건이 성립될 때만 실행되도록 합니다. 아래의 형태가 기본 문법입니다.</div>
-        <div class="underline"></div>
-        <div class="description">
-            if (조건) {  
-          <br>  // 수행할 코드 
-          <br>  }
-        </div>
-        <div class="content-subtitle">&#9728; 조건이 true여야만 실행됩니다.
-        </div>
-        <div class="underline"></div>
-        <div class="description">
-            if (ture) {  
-          <br>  console.log("실행됨"); 
-          <br>  }
-        </div>
-        <div class="underline"></div>
-        <div class="description">
-            if (false) {  
-          <br>  console.log("실행안됨"); 
-          <br>  }
-        </div>
-      </div>
-
-      <div class="contents">
-        <div class="content-title">&lt;조건을 따지는 방법&gt;</div>
-        <a class="reference-link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Comparison_Operators">#Comparison_Operators</a>
-        <div class="underline"></div>
-        <div class="content-subtitle">&#9728;<span class="highlight-green">A === B</span>   A와 B가 같을 때 true 
-        </div>
-        <div class="description">
-          A == B 로 쓸 수도 있지만, javascript에서는 쓰지 않는게 좋습니다. 
-          <br>예를 들어 "1" == 1 로 쓰면 true로 인식합니다. (버그를 만드는 계기가 됩니다)
-        </div>
-        <div class="content-subtitle">&#9728;<span class="highlight-blue">A !== B</span>   A와 B가 다를 때 true 
-        </div>
-        <div class="description">위와 같은 이유로 A != B 로 쓰지 않습니다.</div>
-        <div class="content-subtitle">&#9728;<span class="highlight-pink">A > B</span>   A가 B보다 클 때 true 
-        </div>
-        <div class="content-subtitle">&#9728;<span class="highlight-pink">A < B</span>   A가 B보다 클 때 true 
-        </div>
-        <div class="content-subtitle">&#9728;<span class="highlight-green">A >= B</span>   A가 B와 같거나, B보다 클때 true 
-        </div>
-        <div class="content-subtitle">&#9728;<span class="highlight-green">A >= B</span>   A가 B와 같거나, B보다 작을때 true 
-        </div>
-        <div class="underline"></div>
-        <div class="example-code">
-            var 한국득점 = 2; 
-          <br>  var 독일득점 = 0;  
-          <br>  
-          <br>  if (한국득점 > 독일득점) {
-          <br>      console.log("한국 승리"); 
-          <br>  }
-          
-        </div>
-
-        <div class="content-subtitle"><br>&#9728;조건을 따지고 나머지 예외를 처리하는 방법</div>
-        <div class="underline"></div>
-        <div class="example-code">
-              var 한국득점 = 2; 
-          <br>  var 독일득점 = 0;  
-          <br>  
-          <br>  if (한국득점 > 독일득점) {
-          <br>      console.log("한국 승리"); 
-          <br>  } else {     
-          <br>  console.log("한국 패배"); 
-          <br>  }
-        </div>
-        
-        <div class="content-subtitle">&#9728;여러 조건을 따지는 방법</div>
-        <div class="underline"></div>
-        <div class="example-code">
-            var 한국득점 = 2; 
-          <br>  var 독일득점 = 0;  
-          <br>  
-          <br>  if (한국득점 > 독일득점) {
-          <br>      console.log("한국 승리"); 
-          <br>    } else if (한국득점 === 독일득점) { 
-          <br>      console.log("무승부"); } 
-          <br>  else {  
-          <br>      console.log("한국 패배"); 
-          <br>  }
-        </div>
-        
-        <div class="content-subtitle">&#9728;동시에 여러 조건을 만족해야 할 때 : &&  </div>
-        <div class="description">동시에 여러 조건을 만족해야 할때 조건식 두 개 사이에 <span class="highlight-green">&&</span> 를 사용합니다.</div>
-        <div class="underline"></div>
-        <div class="example-code">
-            var 한국독일승리국 = "한국"; 
-          <br>  var 스웨덴멕시코승리국 = "스웨덴";  
-          <br>  
-          <br>  if (한국독일승리국 === "한국" && 스웨덴멕시코승리국 === "멕시코") {     
-          <br>  console.log("한국 16강 진출"); 
-          <br>  } else {     
-          <br>  console.log("한국 16강 실패"); 
-          <br>  }
-        </div>
-
-        <div class="content-subtitle">&#9728;여러 조건 중 하나만 만족하면 될 때 : || </div>
-        <div class="description">여러 조건 중 하나만 만족하면 될 때 조건식 두 개 사이에 <span class="highlight-green">||</span> 를 사용합니다.</div>
-        <div class="underline"></div>
-        <div class="example-code">
-            var 시험점수 = 90; 
-          <br>  var 특기자 = false;  
-          <br>
-          <br>  if (시험점수 > 80 || 특기자 === true) {  
-          <br>  console.log("합격"); 
-          <br>  } else {  
-          <br>  console.log("불합격"); 
-          <br>  }
-        </div>
-      </div>
-      
-      <div class="contents">
-        <div class="content-title">&lt;for loop(반복문) Summary&gt;</div>
-        <div class="description">특정 코드를 반복할 때 사용합니다.아래 형태가 for loop의 기본 문법입니다</div>
-        <div class="underline"></div>
-        <div class="example-code">
-            for (var 순서 = 0; 순서 < 10; 순서++) {
-          <br>    console.log(순서)        
-          <br>    }
-        </div>
-        <div class="underline"></div>
-        <div class="comment">
-        // 10보다 작으면 으로 설정했기 때문에 0, 1, 2, 3, 4, 5, 6, 7, 8, 9까지 반복한 후 실행이 끝납니다. 순서라는 변수는 for loop 블록 안에서만 사용할 수 있습니다.<br><br>
-        </div>
-        <div class="description">
-          <ul>
-            <li>순서라는 변수에 0을 집어넣고</li>
-            <li>순서의 값이 10보다 작으면</li>
-            <li>순서에 1씩 더합니다. (++는 변수에 1씩 더하겠다는 의미입니다. 순서 = 순서 + 1과 같습니다.)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="contents">
-        <div class="content-title">for loop in Array</div>
-        <div class="description">array는 반복할 때 유용하게 쓸 수 있습니다. <span class="highlight-pink">정말 정말 많이 사용하게 됩니다.</span> </div>
-        <div class="underline"></div>
-        <div class="example-code">
-            var 뭐먹을까리스트 = ["짬뽕", "파스타", "한식", "고기"];  
-          <br>
-          <br>  for (var 순서 = 0; 순서 < 뭐먹을까리스트.length; 순서++) {  
-          <br>  console.log(뭐먹을까리스트[순서] + "먹을까...?"); 
-          <br>  }
-        </div>
-        <div class="underline"></div>
-        <div class="comment">
-            Array는 꺼내쓸 때 뒤에 [0]식으로 번호를 붙여 줬던거 기억하시죠? :)<br><br>
-        </div>
-        <div class="description">
-          <ul>
-            <li>for loop의 순서 변수를 1씩 증가 시키면서 array의 값을 순회하는 것입니다.</li>
-            <li>뭐먹을까리스트.length는 해당 array에 담긴 값의 개수를 반환 해줍니다.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="practice-container">
-        <div class="content-title">&lt;Let's practice!&gt;<p class="writer">by.@@@</p></div>
-        <div class="underline"></div>
-      </div>
-
-      <div class="check-container">
-        <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
-        <div class="underline"></div>
-        <div class="description">
-          저는 수업중에 딴짓하는걸 좋아하는데요, 버튼 toggle 하는거랑 for문으로 array안의 element를 모두 보여주는걸 보고서 버튼을 클릭할 때마다 array 안의 element들을 차례로 불러오는걸 만들어보고싶어졌어요.
-          <br>그래서 if문이랑 for문이랑 이것저것 생각나는대로 시도해봤는데 도저히 안되더라구요.
-          <br>결국 회사 개발자분한테 sos를 쳤고, 수업시간에 배운 내용은 아니지만 어느정도 유추가 가능한 힌트를 얻어 아래 예제를 만들어보았어요.
-          <br>
-          <br>제가 얻은 힌트는 다음과 같습니다
-          <br>  1. 버튼에 onClick이벤트를 단다
-          <br>  2. onClick되면 showCoffeeStory함수를 호출하도록 한다
-          <br>  3. 함수가 불리면 1~n의 숫자가 나와서 Array[Index]로 배열 안에 있는 element에 접근해서 그때마다 coffeeContent의 innerHtml을 바꿔준다
-        </div>
-        <a class="reference-link" href="./coffee/coffee.html">#Javascript practice</a>
-        <div class="comment">위 링크에 들어가시면 inspector를 켜고 source탭을 누른 뒤, coffee.html과 coffee.js를 번갈아보며 어떤 div에 어떤 함수가 적용되었는지 살펴보세요!</div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
+     
 </body>
 
 </html>
