@@ -14,93 +14,93 @@
 <body>
   <div class="body-container">
     <div class="header">
-      <a href= "../index.html">
-           <div class="title">Welcome to Practical Studies</div>
+      <a href="../index.html">
+        <div class="title">Welcome to Practical Studies</div>
       </a>
       <div class="sub-title">Web Coding for Designers</div>
-      
-      <a class="btn-basic" href="https://buzzer.anzi.kr/">Buzzer Here</a>
+
+      <a class="btn-basic" href="https://buzzer.anzi.kr/" target="_blank">Buzzer Here</a>
     </div>
 
 
-   <div class="contents-container">
+    <div class="contents-container">
 
 
       <!--Day 1-->
 
-    <div class="index_container"> 
-      <ul class="index_inner">
+      <div class="index_container">
+        <ul class="index_inner">
 
-         <li class="index">
-           <a href ="../index.html"> 
-                  <div class="index_title">
-                     Day1 
-                  </div>
-            </a>  
-        </li>
-
-         
-        <li class="index">
-            <a href ="./day2.html"> 
-                   <div class="index_title_selected">
-                      Day2 
-                   </div>
-             </a> 
-         </li>
+          <li class="index">
+            <a href="../index.html">
+              <div class="index_title">
+                Day1
+              </div>
+            </a>
+          </li>
 
 
-         <li class="index">
-            <a href ="./day3.html"> 
-                   <div class="index_title">
-                      Day3
-                   </div>
-             </a>  
-         </li>
-
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day4
-                   </div>
-             </a>  
-         </li>
+          <li class="index">
+            <a href="./day2.html">
+              <div class="index_title_selected">
+                Day2
+              </div>
+            </a>
+          </li>
 
 
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day5
-                   </div>
-             </a>  
-         </li>
+          <li class="index">
+            <a href="./day3.html">
+              <div class="index_title">
+                Day3
+              </div>
+            </a>
+          </li>
 
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day6
-                   </div>
-             </a>  
-         </li>
+          <li class="index">
+            <a href="./day4.html">
+              <div class="index_title">
+                Day4
+              </div>
+            </a>
+          </li>
 
 
-         <li class="index">
-             <a href ="#"> 
-                   <div class="index_title">
-                      Day7
-                   </div>
-             </a>  
-         </li>
+          <li class="index">
+            <a href="#">
+              <div class="index_title">
+                Day5
+              </div>
+            </a>
+          </li>
 
-         <li class="index">
-            <a href ="#"> 
-                   <div class="index_title">
-                      Day8
-                   </div>
-             </a>  
-         </li>
+          <li class="index">
+            <a href="#">
+              <div class="index_title">
+                Day6
+              </div>
+            </a>
+          </li>
+
+
+          <li class="index">
+            <a href="#">
+              <div class="index_title">
+                Day7
+              </div>
+            </a>
+          </li>
+
+          <li class="index">
+            <a href="#">
+              <div class="index_title">
+                Day8
+              </div>
+            </a>
+          </li>
 
         </ul>
-    </div>
+      </div>
 
 
       <div class="summary">
@@ -163,58 +163,65 @@
       </div>
 
       <div class="check-container">
-        <div class="content-title">&lt;Check this out!&gt;<p class="writer">by.Youngjin</p></div>
+        <div class="content-title">&lt;Check this out!&gt;
+          <p class="writer">by.Youngjin</p>
+        </div>
         <div class="description">
           구글링해보니 문서상 span 사이에 공백(whitespace)이 있을 경우 margin도, padding도 아닌 여백이 생긴다는 내용을 찾아볼 수 있었습니다.
-          <br>실제 웹 개발에서는 span의 display나 position 등 다양한 속성 뿐만아니라 그 부모 엘리먼트의 속성에 따라서도 결과물이 달라질 수 있기에 이게 정답이라고 단언할 수는 없지만 저는 위 예시 그림을 만들며 발생한 문제를 이렇게 <span class="highlight-blue"> //span태그를 공백없이 붙여 쓰거나, float:left;를 사용하여//</span> 해결했다는 경험을 공유하기 위해 만들었습니당.
+          <br>실제 웹 개발에서는 span의 display나 position 등 다양한 속성 뿐만아니라 그 부모 엘리먼트의 속성에 따라서도 결과물이 달라질 수 있기에 이게 정답이라고 단언할 수는 없지만 저는 위 예시
+          그림을 만들며 발생한 문제를 이렇게
+          <span class="highlight-blue"> //span태그를 공백없이 붙여 쓰거나, float:left;를 사용하여//</span> 해결했다는 경험을 공유하기 위해 만들었습니당.
           <br>
         </div>
         <div class="underline"></div>
         <div class="content-subtitle">&#9728; 1.span with whitespace</div>
-          <span id="r1"></span>
-          <span id="r2"></span>
-          <span id="r3"></span>
-          <div class="example-code">
-            @html
-            <br> &lt;span id="r1"&gt;&lt;/span&gt;
-            <br> &lt;span id="r2"&gt;&lt;/span&gt;
-            <br> &lt;span id="r3"&gt;&lt;/span&gt;
-            <br>
-            <br> @CSS
-            <br> #r1, #r3{
-            <br>  width: 30px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(62, 24, 199, 0.28);
-            <br> }
-            <br> #r2 {
-            <br>  width: 228px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(107, 115, 126, 0.3);
-            <br> }
-          </div>
+        <span id="r1"></span>
+        <span id="r2"></span>
+        <span id="r3"></span>
+        <div class="example-code">
+          @html
+          <br> &lt;span id="r1"&gt;&lt;/span&gt;
+          <br> &lt;span id="r2"&gt;&lt;/span&gt;
+          <br> &lt;span id="r3"&gt;&lt;/span&gt;
+          <br>
+          <br> @CSS
+          <br> #r1, #r3{
+          <br> width: 30px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(62, 24, 199, 0.28);
+          <br> }
+          <br> #r2 {
+          <br> width: 228px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(107, 115, 126, 0.3);
+          <br> }
+        </div>
         <div class="underline"></div>
         <div class="content-subtitle">&#9728; 2.span without whitespace</div>
-          <span id="r1"></span><span id="r2"></span><span id="r3"></span>
-          <div class="example-code">
-            @html
-            <br> &lt;span id="r1"&gt;&lt;/span&gt;&lt;span id="r2"&gt;&lt;/span&gt;&lt;span id="r3"&gt;&lt;/span&gt;
-            <br>
-            <br> @CSS : <span class="highlight-green">same with &#9728;1</span>
-            <br> #r1, #r3{
-            <br>  width: 30px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(62, 24, 199, 0.28);
-            <br> }
-            <br> #r2 {
-            <br>  width: 228px;
-            <br>  height: 30px;
-            <br>  display: inline-block;
-            <br>  background-color: rgba(107, 115, 126, 0.3);
-            <br> }
-          </div>
+        <span id="r1"></span>
+        <span id="r2"></span>
+        <span id="r3"></span>
+        <div class="example-code">
+          @html
+          <br> &lt;span id="r1"&gt;&lt;/span&gt;&lt;span id="r2"&gt;&lt;/span&gt;&lt;span id="r3"&gt;&lt;/span&gt;
+          <br>
+          <br> @CSS :
+          <span class="highlight-green">same with &#9728;1</span>
+          <br> #r1, #r3{
+          <br> width: 30px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(62, 24, 199, 0.28);
+          <br> }
+          <br> #r2 {
+          <br> width: 228px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(107, 115, 126, 0.3);
+          <br> }
+        </div>
         <div class="underline"></div>
         <div class="content-subtitle">&#9728; 3.span with whitespace and float properties</div>
         <span id="r1f"></span>
@@ -228,18 +235,18 @@
           <br>
           <br> @CSS
           <br> #r1f, #r3f{
-          <br>  width: 30px;
-          <br>  height: 30px;
-          <br>  display: inline-block;
-          <br>  background-color: rgba(62, 24, 199, 0.28);
-          <br>  float: left;
+          <br> width: 30px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(62, 24, 199, 0.28);
+          <br> float: left;
           <br> }
           <br> #r2f {
-          <br>  width: 228px;
-          <br>  height: 30px;
-          <br>  display: inline-block;
-          <br>  background-color: rgba(107, 115, 126, 0.3);
-          <br>  float: left;
+          <br> width: 228px;
+          <br> height: 30px;
+          <br> display: inline-block;
+          <br> background-color: rgba(107, 115, 126, 0.3);
+          <br> float: left;
           <br> }
         </div>
       </div>
@@ -263,19 +270,22 @@
               &#9728; 가로 중앙 정렬하기-1
             </div>
             <div class="description">
-              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 가로 사이즈가 고정일 경우 (예: 200px일 경우)
+              position이
+              <span class="highlight-green">absolute</span> 이거나
+              <span class="highlight-green">fixed</span>이고 가로 사이즈가 고정일 경우 (예: 200px일 경우)
             </div>
             <div class="example-code">
               @CSS
-              <br> position: absolute;  /* position: fixed; */ 
-              <br> left: 50%; 
+              <br> position: absolute; /* position: fixed; */
+              <br> left: 50%;
               <br> margin-left: -100px;
             </div>
             <div class="content-subtitle">
               &#9728; 가로 중앙 정렬하기-2
             </div>
             <div class="description">
-              display 값이 <span class="highlight-green">block</span>이라면 margin을 활용합니다.
+              display 값이
+              <span class="highlight-green">block</span>이라면 margin을 활용합니다.
             </div>
             <div class="example-code">
               @CSS
@@ -285,7 +295,8 @@
               &#9728; 가로 중앙 정렬하기-3
             </div>
             <div class="description">
-              display 값이 <span class="highlight-green">inline</span>이라면 text-align을 활용합니다.
+              display 값이
+              <span class="highlight-green">inline</span>이라면 text-align을 활용합니다.
             </div>
             <div class="example-code">
               @CSS
@@ -301,19 +312,22 @@
               <img src="../images/practice4.png" alt="sample2">
             </a>
             <a class="comment" href="">#세로 중앙 정렬하기-1 예시</a>
-            <a class="comment" href=""><br>#세로 중앙 정렬하기-2 예시</a>
+            <a class="comment" href="">
+              <br>#세로 중앙 정렬하기-2 예시</a>
           </div>
           <div class="sub-contents-right">
             <div class="content-subtitle">
               &#9728; 세로 중앙 정렬하기-1
             </div>
             <div class="description">
-              position이 <span class="highlight-green">absolute</span> 이거나 <span class="highlight-green">fixed</span>이고 세로 사이즈가 고정일 경우 (예: 200px일 경우)
+              position이
+              <span class="highlight-green">absolute</span> 이거나
+              <span class="highlight-green">fixed</span>이고 세로 사이즈가 고정일 경우 (예: 200px일 경우)
             </div>
             <div class="example-code">
               @CSS
-              <br> position: absolute;  /* position: fixed; */ 
-              <br> top: 50%; 
+              <br> position: absolute; /* position: fixed; */
+              <br> top: 50%;
               <br> margin-top: -100px;
             </div>
             <div class="content-subtitle">
@@ -332,53 +346,58 @@
 
         <div class="underline"></div>
         <div class="sub-contents-container">
-            <div class="sub-contents-left">
+          <div class="sub-contents-left">
 
-              <a href="../images/pratice05_popup.png" class="example-img">
-                <img src="../images/pratice05_popup.png" alt="sample03">
-              </a>
-              <p>#z-index 예시</p>
+            <a href="../images/pratice05_popup.png" class="example-img">
+              <img src="../images/pratice05_popup.png" alt="sample03">
+            </a>
+            <p>#z-index 예시</p>
+          </div>
+          <!-- sub contents-left 끝 -->
+          <div class="sub-contents-right">
+            <div class="content-subtitle">
+              &#9728; z-index
             </div>
-            <!-- sub contents-left 끝 -->
-            <div class="sub-contents-right">
-                <div class="content-subtitle">
-                    &#9728; z-index
-                </div>
-                <div class="description">
-                    The z-index CSS property specifies the z-order of a positioned element and its descendants. <br>When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally covers an element with a lower one.
-                    <br>
-                    <br>z-index는 z축의 order을 나타낸다.
-                    <br>요소들이 overlap될 때, z-order는 다른 무언가를 덮는 어떤 것을 결정한다.
-                    <br>z-index가 큰 요소는 일반적으로 그것보다 z-index가 낮은 요소보다 상위에 위치한다.
-                </div>
+            <div class="description">
+              The z-index CSS property specifies the z-order of a positioned element and its descendants.
+              <br>When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally
+              covers an element with a lower one.
+              <br>
+              <br>z-index는 z축의 order을 나타낸다.
+              <br>요소들이 overlap될 때, z-order는 다른 무언가를 덮는 어떤 것을 결정한다.
+              <br>z-index가 큰 요소는 일반적으로 그것보다 z-index가 낮은 요소보다 상위에 위치한다.
+            </div>
 
-                <div class="example-code">
-                    <br>auto 입력 값
-                    <br>z-index: auto;
-                    <br>
-                    <br>
-                    <h5>뜻</h5>
-                    The stack level of the generated box in the current stacking context is the same as its parent's box.
-                    <br>
-                    <br>정수로 된 수치(integer)
-                    <br>z-index: 0;
-                    <br>z-index: 3;
-                    <br>z-index: 289;
-                    <br>z-index: -1; /* Negative values to lower the priority */
-                    <br>
-                    <br>
-                    <h5>뜻</h5>
-                    This integer is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context in which its stack level is 0. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.
-                    <br> 정수로 된 수치는 해당 영역에서 stack level을 0부터 만들 수 있다. 이 영역 밖에서 z-index를 가진 요소는 해당 영역 안에서 하위 z-index를 가진 요소에게 영향을 끼치지 않는다.
-                    <br>
-                    <br>Global 입력 값
-                    <br>z-index: inherit; 부모의 z-index를 이어 받는다.
-                    <br>z-index: initial; 이 요소의 z-index를 가장 하위의 요소로 둔다.
-                    <br>z-index: unset; 부모로부터 상속된게 있으면, inherit 적용/ 아니면 initial 적용
-                  </div>
+            <div class="example-code">
+              <br>auto 입력 값
+              <br>z-index: auto;
+              <br>
+              <br>
+              <h5>뜻</h5>
+              The stack level of the generated box in the current stacking context is the same as its parent's box.
+              <br>
+              <br>정수로 된 수치(integer)
+              <br>z-index: 0;
+              <br>z-index: 3;
+              <br>z-index: 289;
+              <br>z-index: -1; /* Negative values to lower the priority */
+              <br>
+              <br>
+              <h5>뜻</h5>
+              This integer is the stack level of the generated box in the current stacking context. The box also establishes a local stacking
+              context in which its stack level is 0. This means that the z-indexes of descendants are not compared to the
+              z-indexes of elements outside this element.
+              <br> 정수로 된 수치는 해당 영역에서 stack level을 0부터 만들 수 있다. 이 영역 밖에서 z-index를 가진 요소는 해당 영역 안에서 하위 z-index를 가진 요소에게 영향을 끼치지
+              않는다.
+              <br>
+              <br>Global 입력 값
+              <br>z-index: inherit; 부모의 z-index를 이어 받는다.
+              <br>z-index: initial; 이 요소의 z-index를 가장 하위의 요소로 둔다.
+              <br>z-index: unset; 부모로부터 상속된게 있으면, inherit 적용/ 아니면 initial 적용
             </div>
+          </div>
         </div>
-              <!-- Day2 Div 끝 -->
+        <!-- Day2 Div 끝 -->
       </div>
 
     </div>
