@@ -13,6 +13,7 @@ var me = {
 }
 */
 var coffeeContent = document.getElementById("coffeeContent");
+
 var coffeeStory = "";
 
 var coffeeHistory = ["진수", "혜령", "선유"];
